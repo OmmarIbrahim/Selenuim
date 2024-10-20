@@ -8,17 +8,18 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Automation {
 
-    public static void main(String[] args) {
+    //public static void main(String[] args) {
 
 
         WebDriver driver = new ChromeDriver();
 
-        driver.get("https://the-internet.herokuapp.com/");
+      //  driver.get("https://the-internet.herokuapp.com/");
 
 
         WebElement UserName =driver.findElement(By.partialLinkText("event")) ;
 
-        UserName.click();
+      //  UserName.click();
+
 
 
 
@@ -37,5 +38,5 @@ public class Automation {
 
 
 
-    }
+  //  }
 }
