@@ -17,19 +17,16 @@ public class Login {
 
         driver.get("https://the-internet.herokuapp.com/login");
 
-
-
-
         WebElement UserName = driver.findElement(By.id("username"));
-
 
         UserName.sendKeys("tomsmith");
 
 
-        WebElement Password = driver.findElement(By.id("password"));
+         WebElement Password = driver.findElement(By.id("password"));
 
          Password.sendKeys("SuperSecretPassword!");
-        WebElement login = driver.findElement(By.className("radius"));
+
+         WebElement login = driver.findElement(By.className("radius"));
 
         login.click();
 

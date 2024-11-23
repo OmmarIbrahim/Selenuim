@@ -15,26 +15,18 @@ public class FindElementByID {
 
         driver.get("https://duckduckgo.com/");
 
-        WebElement Search_input = driver.findElement(By.id("searchbox_input"));
+            WebElement tool = driver.findElement(By.cssSelector(".searchbox_input__bEGm3"));
 
-        Search_input.sendKeys("Panda");
-        //here we couldn't find an id the element, so I decide to use the Xpath
+            tool.sendKeys("Panda");
 
-        WebElement Click = driver.findElement(By.xpath("//button[@aria-label='Search']"));
-
-
-        Click.click();
 
         try {
-            // Pausing execution for 5 seconds (5000 milliseconds)
-            Thread.sleep(5000);
+            // Pausing execution for 2 seconds (2000 milliseconds)
+            Thread.sleep(2000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
 
-        driver.navigate().back();
-
-        Search_input.clear();
 
 
 
