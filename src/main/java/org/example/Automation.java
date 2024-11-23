@@ -26,11 +26,6 @@ public class Automation {
         Set<String> ALLPages = driver.getWindowHandles();
 
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3)) ;
-        try {
-            Thread.sleep(29);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
 
         for (String s : ALLPages)
         {
